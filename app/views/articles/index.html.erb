@@ -1,0 +1,11 @@
+
+
+<div class="row">
+  <div class="col-8 mx-auto my-5">
+    <% @articles.each do |article| %>
+      <h2><%= link_to article.title, article %></h2>
+      <p><%= article.content %></p>
+      <hr>
+    <% end %>
+  </div>
+</div>
